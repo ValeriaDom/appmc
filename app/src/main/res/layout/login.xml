@@ -2,40 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="#E6E6E6" >
 
     <Button
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/login"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/login"
-        android:layout_marginBottom="25dp"
-        android:text="Register" />
-
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/register"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignRight="@+id/password"
-        android:text="Login" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/login"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPassword" >
-
-        <requestFocus />
-    </EditText>
-
-     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -45,30 +14,89 @@
         android:background="#3b5998"
         android:text="" />
 
-
-    <TextView
-        android:id="@+id/TextView01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_marginLeft="22dp"
-        android:text="Password" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView01"
-        android:layout_centerHorizontal="true"
-        android:ems="10" />
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="218dp"
+        android:layout_height="174dp"
+        android:layout_alignRight="@+id/username"
+        android:layout_below="@+id/button3"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/TextView01"
+        android:layout_alignLeft="@+id/username"
         android:layout_centerVertical="true"
-        android:text="Username" />
+        android:text="Username"
+        android:textColor="#3b5998"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:background="#f7f7f7"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="14dp"
+        android:text="Password"
+        android:textColor="#3b5998"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:background="#f7f7f7"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/register"
+        android:layout_alignBottom="@+id/register"
+        android:layout_alignRight="@+id/TextView01"
+        android:background="#3b5998"
+        android:text="Login"
+        android:textColor="#E6E6E6"
+        android:textSize="25px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/password"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="28dp"
+        android:background="#3b5998"
+        android:text="Register"
+        android:textColor="#E6E6E6"
+        android:textSize="25px"
+        android:textStyle="bold" />
 
 </RelativeLayout>
